@@ -18,7 +18,6 @@ bootstrap = Bootstrap()
 mail = Mail()
 db = SQLAlchemy()
 
-
 # 工厂函数
 def create_app(config_name):
     app = Flask(__name__)
@@ -31,8 +30,10 @@ def create_app(config_name):
 
     #注册蓝本
     from .main import main as main_blueprint
+    from .project import project as project_blueprint
 
     app.register_blueprint(main_blueprint)
+    app.register_blueprint(project_blueprint,  url_prefix='/project/')
     # app.register_blueprint(main_blueprint, url_prefix = '/auth')
     return app
 
