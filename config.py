@@ -27,7 +27,7 @@ class DevelopmentConfig(Config):
     DEBUG = True
 
     # SQLALCHEMY_DATABASE_URI = 'mysql+pymysql://root:111111@127.0.0.1:3306/world'
-    SQLALCHEMY_DATABASE_URI = 'mysql://root:shouhuang123!@#@106.14.205.157:3306/nutem'
+
     SQLALCHEMY_POOL_SIZE = 20
     SQLALCHEMY_POOL_RECYCLE = 1800
     SQLALCHEMY_TRACK_MODIFICATIONS = True
