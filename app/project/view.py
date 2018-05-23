@@ -15,6 +15,7 @@ import json
 
 @project.route('/', methods=['GET'])
 def project():
+    #print request.headers  查看request headers
     if request.args.get('id'):
         project = NutemProject.query.filter_by(id=request.args.get('id')).first()
         results = json.dumps(project, cls=AlchemyEncoder)
