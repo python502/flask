@@ -73,7 +73,7 @@ python-dateutil==2.6.1
 python-editor==1.0.3
 pytz==2017.3
 PyV8==1.0
-pywin32==221
+pywin32==301
 query-string==0.0.28
 queuelib==1.4.2
 request==0.0.26
